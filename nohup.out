@@ -1,0 +1,84 @@
+Traceback (most recent call last):
+  File "run.py", line 8, in <module>
+    from simple_nn import Simple_nn
+  File "/nethome/hluo76/miniconda3/lib/python3.7/site-packages/simple_nn/__init__.py", line 5, in <module>
+    from .utils import modified_sigmoid, _generate_gdf_file
+  File "/nethome/hluo76/miniconda3/lib/python3.7/site-packages/simple_nn/utils/__init__.py", line 11, in <module>
+    from tensorflow.python.framework import ops
+  File "/nethome/hluo76/miniconda3/lib/python3.7/site-packages/tensorflow/__init__.py", line 98, in <module>
+    from tensorflow_core import *
+  File "/nethome/hluo76/miniconda3/lib/python3.7/site-packages/tensorflow_core/__init__.py", line 40, in <module>
+    from tensorflow.python.tools import module_util as _module_util
+  File "/nethome/hluo76/miniconda3/lib/python3.7/site-packages/tensorflow/__init__.py", line 50, in __getattr__
+    module = self._load()
+  File "/nethome/hluo76/miniconda3/lib/python3.7/site-packages/tensorflow/__init__.py", line 44, in _load
+    module = _importlib.import_module(self.__name__)
+  File "/nethome/hluo76/miniconda3/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "/nethome/hluo76/miniconda3/lib/python3.7/site-packages/tensorflow_core/python/__init__.py", line 49, in <module>
+    from tensorflow.python import pywrap_tensorflow
+  File "/nethome/hluo76/miniconda3/lib/python3.7/site-packages/tensorflow_core/python/pywrap_tensorflow.py", line 25, in <module>
+    from tensorflow.python.platform import self_check
+ModuleNotFoundError: No module named 'tensorflow.python.platform'
+/nethome/hluo76/miniconda3/envs/gluon/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:517: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+/nethome/hluo76/miniconda3/envs/gluon/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:518: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+/nethome/hluo76/miniconda3/envs/gluon/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:519: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+/nethome/hluo76/miniconda3/envs/gluon/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:520: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+/nethome/hluo76/miniconda3/envs/gluon/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:521: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+/nethome/hluo76/miniconda3/envs/gluon/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:526: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+/nethome/hluo76/miniconda3/envs/gluon/lib/python3.6/site-packages/simple_nn/__init__.py:75: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  self.inputs = deep_update(self.inputs, yaml.load(input_file), warn_new_key=True, logfile=self.logfile)
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+dense_1 (Dense)              (None, 100)               22800     
+_________________________________________________________________
+dense_2 (Dense)              (None, 50)                5050      
+_________________________________________________________________
+dense_3 (Dense)              (None, 24)                1224      
+_________________________________________________________________
+dense_4 (Dense)              (None, 24)                600       
+_________________________________________________________________
+dense_5 (Dense)              (None, 1)                 25        
+=================================================================
+Total params: 29,699
+Trainable params: 29,699
+Non-trainable params: 0
+_________________________________________________________________
+None
+[{'class_name': 'Dense', 'config': {'name': 'dense_1', 'trainable': True, 'batch_input_shape': (None, 227), 'dtype': 'float64', 'units': 100, 'activation': 'tanh', 'use_bias': True, 'kernel_initializer': {'class_name': 'TruncatedNormal', 'config': {'mean': 0.0, 'stddev': 0.3, 'seed': None, 'dtype': 'float64'}}, 'bias_initializer': {'class_name': 'TruncatedNormal', 'config': {'mean': 0.0, 'stddev': 0.3, 'seed': None, 'dtype': 'float64'}}, 'kernel_regularizer': None, 'bias_regularizer': None, 'activity_regularizer': None, 'kernel_constraint': None, 'bias_constraint': None}}, {'class_name': 'Dense', 'config': {'name': 'dense_2', 'trainable': True, 'dtype': 'float64', 'units': 50, 'activation': 'tanh', 'use_bias': True, 'kernel_initializer': {'class_name': 'TruncatedNormal', 'config': {'mean': 0.0, 'stddev': 0.3, 'seed': None, 'dtype': 'float64'}}, 'bias_initializer': {'class_name': 'TruncatedNormal', 'config': {'mean': 0.0, 'stddev': 0.3, 'seed': None, 'dtype': 'float64'}}, 'kernel_regularizer': None, 'bias_regularizer': None, 'activity_regularizer': None, 'kernel_constraint': None, 'bias_constraint': None}}, {'class_name': 'Dense', 'config': {'name': 'dense_3', 'trainable': True, 'dtype': 'float64', 'units': 24, 'activation': 'tanh', 'use_bias': True, 'kernel_initializer': {'class_name': 'TruncatedNormal', 'config': {'mean': 0.0, 'stddev': 0.3, 'seed': None, 'dtype': 'float64'}}, 'bias_initializer': {'class_name': 'TruncatedNormal', 'config': {'mean': 0.0, 'stddev': 0.3, 'seed': None, 'dtype': 'float64'}}, 'kernel_regularizer': None, 'bias_regularizer': None, 'activity_regularizer': None, 'kernel_constraint': None, 'bias_constraint': None}}, {'class_name': 'Dense', 'config': {'name': 'dense_4', 'trainable': True, 'dtype': 'float64', 'units': 24, 'activation': 'tanh', 'use_bias': True, 'kernel_initializer': {'class_name': 'TruncatedNormal', 'config': {'mean': 0.0, 'stddev': 0.3, 'seed': None, 'dtype': 'float64'}}, 'bias_initializer': {'class_name': 'TruncatedNormal', 'config': {'mean': 0.0, 'stddev': 0.3, 'seed': None, 'dtype': 'float64'}}, 'kernel_regularizer': None, 'bias_regularizer': None, 'activity_regularizer': None, 'kernel_constraint': None, 'bias_constraint': None}}, {'class_name': 'Dense', 'config': {'name': 'dense_5', 'trainable': True, 'dtype': 'float64', 'units': 1, 'activation': 'linear', 'use_bias': True, 'kernel_initializer': {'class_name': 'TruncatedNormal', 'config': {'mean': 0.0, 'stddev': 0.3, 'seed': None, 'dtype': 'float64'}}, 'bias_initializer': {'class_name': 'TruncatedNormal', 'config': {'mean': 0.0, 'stddev': 0.3, 'seed': None, 'dtype': 'float64'}}, 'kernel_regularizer': None, 'bias_regularizer': None, 'activity_regularizer': None, 'kernel_constraint': None, 'bias_constraint': None}}]
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+dense_6 (Dense)              (None, 100)               22900     
+_________________________________________________________________
+dense_7 (Dense)              (None, 50)                5050      
+_________________________________________________________________
+dense_8 (Dense)              (None, 24)                1224      
+_________________________________________________________________
+dense_9 (Dense)              (None, 24)                600       
+_________________________________________________________________
+dense_10 (Dense)             (None, 1)                 25        
+=================================================================
+Total params: 29,799
+Trainable params: 29,799
+Non-trainable params: 0
+_________________________________________________________________
+None
+[{'class_name': 'Dense', 'config': {'name': 'dense_6', 'trainable': True, 'batch_input_shape': (None, 228), 'dtype': 'float64', 'units': 100, 'activation': 'tanh', 'use_bias': True, 'kernel_initializer': {'class_name': 'TruncatedNormal', 'config': {'mean': 0.0, 'stddev': 0.3, 'seed': None, 'dtype': 'float64'}}, 'bias_initializer': {'class_name': 'TruncatedNormal', 'config': {'mean': 0.0, 'stddev': 0.3, 'seed': None, 'dtype': 'float64'}}, 'kernel_regularizer': None, 'bias_regularizer': None, 'activity_regularizer': None, 'kernel_constraint': None, 'bias_constraint': None}}, {'class_name': 'Dense', 'config': {'name': 'dense_7', 'trainable': True, 'dtype': 'float64', 'units': 50, 'activation': 'tanh', 'use_bias': True, 'kernel_initializer': {'class_name': 'TruncatedNormal', 'config': {'mean': 0.0, 'stddev': 0.3, 'seed': None, 'dtype': 'float64'}}, 'bias_initializer': {'class_name': 'TruncatedNormal', 'config': {'mean': 0.0, 'stddev': 0.3, 'seed': None, 'dtype': 'float64'}}, 'kernel_regularizer': None, 'bias_regularizer': None, 'activity_regularizer': None, 'kernel_constraint': None, 'bias_constraint': None}}, {'class_name': 'Dense', 'config': {'name': 'dense_8', 'trainable': True, 'dtype': 'float64', 'units': 24, 'activation': 'tanh', 'use_bias': True, 'kernel_initializer': {'class_name': 'TruncatedNormal', 'config': {'mean': 0.0, 'stddev': 0.3, 'seed': None, 'dtype': 'float64'}}, 'bias_initializer': {'class_name': 'TruncatedNormal', 'config': {'mean': 0.0, 'stddev': 0.3, 'seed': None, 'dtype': 'float64'}}, 'kernel_regularizer': None, 'bias_regularizer': None, 'activity_regularizer': None, 'kernel_constraint': None, 'bias_constraint': None}}, {'class_name': 'Dense', 'config': {'name': 'dense_9', 'trainable': True, 'dtype': 'float64', 'units': 24, 'activation': 'tanh', 'use_bias': True, 'kernel_initializer': {'class_name': 'TruncatedNormal', 'config': {'mean': 0.0, 'stddev': 0.3, 'seed': None, 'dtype': 'float64'}}, 'bias_initializer': {'class_name': 'TruncatedNormal', 'config': {'mean': 0.0, 'stddev': 0.3, 'seed': None, 'dtype': 'float64'}}, 'kernel_regularizer': None, 'bias_regularizer': None, 'activity_regularizer': None, 'kernel_constraint': None, 'bias_constraint': None}}, {'class_name': 'Dense', 'config': {'name': 'dense_10', 'trainable': True, 'dtype': 'float64', 'units': 1, 'activation': 'linear', 'use_bias': True, 'kernel_initializer': {'class_name': 'TruncatedNormal', 'config': {'mean': 0.0, 'stddev': 0.3, 'seed': None, 'dtype': 'float64'}}, 'bias_initializer': {'class_name': 'TruncatedNormal', 'config': {'mean': 0.0, 'stddev': 0.3, 'seed': None, 'dtype': 'float64'}}, 'kernel_regularizer': None, 'bias_regularizer': None, 'activity_regularizer': None, 'kernel_constraint': None, 'bias_constraint': None}}]
+Traceback (most recent call last):
+  File "run.py", line 21, in <module>
+    model.run()
+  File "/nethome/hluo76/miniconda3/envs/gluon/lib/python3.6/site-packages/simple_nn/__init__.py", line 178, in run
+    self.model.train(user_optimizer=user_optimizer, aw_modifier=modifier)
+  File "/nethome/hluo76/miniconda3/envs/gluon/lib/python3.6/site-packages/simple_nn/models/neural_network.py", line 656, in train
+    self._get_loss()
+  File "/nethome/hluo76/miniconda3/envs/gluon/lib/python3.6/site-packages/simple_nn/models/neural_network.py", line 308, in _get_loss
+    self.str_e_loss = tf.unsorted_segment_mean(self.e_loss, self.next_elem['struct_ind'], tf.size(self.next_elem['struct_type_set']))
+AttributeError: module 'tensorflow' has no attribute 'unsorted_segment_mean'

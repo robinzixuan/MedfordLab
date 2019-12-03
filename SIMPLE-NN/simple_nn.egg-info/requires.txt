@@ -1,0 +1,9 @@
+numpy
+ase>=3.10.0
+pyyaml>=3.10
+cffi>=1.0.0
+psutil
+tqdm
+braceexpand
+matplotlib<3.0
+tensorflow<2.0,>=1.6

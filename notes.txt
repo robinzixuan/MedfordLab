@@ -1,0 +1,22 @@
+1. Minimal instructions for reviewers to understand the submitted files
+    1. Creating Pt_111 slab surface
+    2. Add CO as the reaction material
+    3. Created a .traj file and use ASE function add_adsorbate to do reaction and clacualte its energy
+    4. import the GPAW and analzye the reaction
+
+
+2. Links to any relevant files
+    https://www.sciencedirect.com/science/article/pii/S0039602818308124
+    https://aip.scitation.org/doi/abs/10.1063/1.440029
+
+3. If you are submitting as a group, a brief description of your individual contribution
+    I contribute the first presentation and do some analyze by using the GPAW instead of esspco. Also, I do the research of how the DFT function work and write some code to calculate the energy using in the reaction
+
+
+4. a self-assessment of which goals you achieved and why
+    1. Log in pace-ice
+    2. Successfully can use the esspco
+    3. Creating molecules and slabs in several situation
+    
+
+

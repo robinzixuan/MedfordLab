@@ -1,0 +1,35 @@
+Name: Robin Luo
+
+Paper: Smith, Justin S., Olexandr Isayev, and Adrian E. Roitberg. 
+"ANI-1: an extensible neural network potential with DFT accuracy 
+at force field computational cost." Chemical science 8.4 (2017): 
+3192-3203.
+
+
+Skimming Questions:
+
+1) Summarize the overall goal of the work.
+
+The goal of study is introducing ANAKIN-ME (Accurate NeurAl networK engine for Molecular Energies) or ANI in short. ANI is a new
+method designed with the intent of developing transferable neural network potentials that utilize a highlymodified version of the Behler and Parrinello symmetry functions to build single-atom atomic environment
+vectors (AEV) as a molecular representation
+
+2) What figure is most interesting or relevant? What is the main thing you learned from it?
+
+Figure 3 is most relevant to our research field. In the figure, we can get how the model expected to show. Also, the image let me understand how the model RMSE change with the dataset increase.
+
+Reading Questions:
+
+3) What is the strongest point of the paper?
+
+1. The paper provides us detail information and external link about the how the natural network algorithm is running. 
+2. The author uses the images to help us more clear to get the result of the experiment and understand what the research expected us do.
+
+4) What is the weakest point of the paper?
+
+The paper did not give out a very clear part for what kind of data is suitable for this model
+
+5) How does the paper relate to your research project?
+
+The goal of the Natural Network help me understand what we should do on our project and 
+give me the idea of improve our models.
